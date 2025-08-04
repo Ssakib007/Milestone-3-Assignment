@@ -1,14 +1,15 @@
 /** Problem -01 ( Divide the Asset ) */
+
 var area = 800;
-//write your code here
-if (area > 0 && area <= 10 ** 9) {
-  var share = area / 2;
-  console.log(share);
-}
+
+var share = area / 2;
+
+console.log(share);
 
 /** Problem -02 ( Cycle or Laptop ) */
+
 var money = 10000;
-//write your code here
+
 if (money >= 25000) {
   console.log("Laptop");
 } else if (money >= 10000) {
@@ -18,8 +19,9 @@ if (money >= 25000) {
 }
 
 /** Problem -03 ( Medicine Planner ) */
-var lastDay = 6;
-//write your code here
+
+var lastDay = 11;
+
 for (var i = 1; i <= lastDay; i++) {
   if (i % 3 === 0) {
     console.log(i + " - medicine");
@@ -29,8 +31,9 @@ for (var i = 1; i <= lastDay; i++) {
 }
 
 /** Problem 04 - (Delete / Store) */
+
 var fileName = "pdfData.pdf";
-//write your code here
+
 if (
   fileName.startsWith("#") ||
   fileName.toLowerCase().endsWith(".pdf") ||
@@ -41,10 +44,23 @@ if (
   console.log("Delete");
 }
 
+/** Problem 05 - ( PH Email Generator ) */
 
-/** Problem 05 - ( PH Email Generator )  */
 var student = { name: "jhankar", roll: 1014, department: "cse" };
-//write your code here
+
 var email =
   student.name + student.roll + "." + student.department + "@ph.ac.bd";
+
 console.log(email);
+
+/** Problem 06 : (Current Salary ) */
+
+var experience = 30;
+
+var startingSalary = 45000;
+
+for (var i = 1; i <= experience; i++) {
+  startingSalary = startingSalary + (startingSalary * 5) / 100;
+}
+
+console.log(startingSalary.toFixed(2));
