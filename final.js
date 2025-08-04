@@ -6,7 +6,6 @@ if (area > 0 && area <= 10 ** 9) {
   console.log(share);
 }
 
-
 /** Problem -02 ( Cycle or Laptop ) */
 var money = 10000;
 //write your code here
@@ -29,14 +28,13 @@ for (var i = 1; i <= lastDay; i++) {
   }
 }
 
-
 /** Problem 04 - (Delete / Store) */
 var fileName = "pdfData.pdf";
 //write your code here
 if (
   fileName.startsWith("#") ||
-  fileName.endsWith(".pdf") ||
-  fileName.endsWith(".docx")
+  fileName.toLowerCase().endsWith(".pdf") ||
+  fileName.toLowerCase().endsWith(".docx")
 ) {
   console.log("Store");
 } else {
